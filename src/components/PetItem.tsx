@@ -1,7 +1,10 @@
-const PetItem = () => {
+const PetItem = ({name, age, owner}) => {
   return (
-    <div>
-    </div>
+    <tr>
+      <td>{name}</td>
+      <td>{age}</td>
+      <td>{owner}</td>
+    </tr>
   )
 }
 
