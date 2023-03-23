@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PetList from './components/PetList'
+import ToggleButton from './components/ToggleButton'
 import './App.css';
 
 const App = () => {
@@ -23,7 +24,11 @@ const App = () => {
   return (
     <div className="App">
       <div className='container'>
-        <button onClick={() => { setShow(!show) }}>Show Pets</button>
+        <ToggleButton
+          state={show}
+          setState={setShow}
+          buttonText={show ? 'hide' : 'show'}
+        />
         { show && (
           <>
             <h1>Pets</h1>
