@@ -9,9 +9,9 @@ interface Pets {
   owner?: string;
 }
 
-const App: React.FC = () => {
+const App = () => {
   const [show, setShow] = useState<boolean>(false);
-  const ss: Pets[] = [
+  const pets: Pets[] = [
     {
       name: "Doge",
       age: 1,

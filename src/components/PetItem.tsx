@@ -1,7 +1,7 @@
 interface Item {
   name: string;
-  age: number;
-  owner: string;
+  age?: number;
+  owner?: string;
 }
 
 const PetItem = ({ name, age, owner }: Item) => {

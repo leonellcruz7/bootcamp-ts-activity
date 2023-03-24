@@ -7,7 +7,7 @@ interface Props {
 }
 
 const ToggleButton: React.FC<Props> = ({ buttonText, state, setState }) => {
-  return <button onClick={() => setState(state)}>{buttonText}</button>;
+  return <button onClick={() => setState(!state)}>{buttonText}</button>;
 };
 
 export default ToggleButton;

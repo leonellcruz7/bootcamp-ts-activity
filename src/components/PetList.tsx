@@ -1,8 +1,8 @@
 import PetItem from "./PetItem";
 export interface Pets {
   name: string;
-  age: number;
-  owner: string;
+  age?: number;
+  owner?: string;
 }
 interface Props {
   pets: Pets[];
